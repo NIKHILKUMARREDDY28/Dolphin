@@ -14,3 +14,28 @@ exclude = '''
   | dist
 )/
 '''
+
+[project]
+name = "dolphin-extraction"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "NIKHIL KUMAR REDDY",email = "nikhilkumar.m@skil.ai"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "albumentations (==1.4.0)",
+    "omegaconf (==2.3.0)",
+    "pillow (==9.3.0)",
+    "transformers (==4.47.0)",
+    "accelerate (==1.6.0)",
+    "pymupdf (==1.26)",
+    "opencv-python (==4.11.0.86)",
+    "timm (==0.5.4)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
